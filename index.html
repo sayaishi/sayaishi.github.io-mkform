@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>mkform</title>
+        <link rel="stylesheet" href="mkform.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <h1>お問い合わせフォーム</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="item">
+                    <p class="title">お名前（必須）</p>
+                    <input id="form">
+                    <!--input(count<=0)の時、赤字で「※入力されていません。」と表示したい-->
+                </div>
+                <div class="item">
+                    <p class="title">メールアドレス（必須）</p>
+                    <input type="email" id="form">
+                    <!--input(count<=0)の時、赤字で「※入力されていません。」と表示したい-->
+                </div>
+                <div class="item">
+                    <p class="title">内容（必須）</p>
+                    <textarea id="form"></textarea>
+                    <!--textarea(count<=0)の時、赤字で「※入力されていません。」と表示したい-->
+                </div>
+                <div class="check">
+                    <input type="checkbox" id="checkbox">
+                    <p>プライバシーポリシーに同意する</p>
+                </div>
+                    <!--checkboxがclickされたらsubmitのdisabledを解除したい-->
+                <div class="submit">
+                    <input type="submit" value="送信" id="btn" disabled>
+                </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script_src="js/mkform.js"></script>
+    </body>
+</html>
